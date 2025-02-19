@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recommendation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Food Recommendation</h1>
+    <p>Choose your preference and we'll suggest a food!</p>
+
+    <form id="foodForm">
+      <label for="foodType">Select Food Type:</label>
+      <select id="foodType">
+        <option value="italian">Italian</option>
+        <option value="mexican">Mexican</option>
+        <option value="indian">Indian</option>
+        <option value="chinese">Chinese</option>
+      </select>
+
+      <label for="spiceLevel">Select Spice Level:</label>
+      <select id="spiceLevel">
+        <option value="mild">Mild</option>
+        <option value="medium">Medium</option>
+        <option value="spicy">Spicy</option>
+      </select>
+
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="result">
+      <h3>Recommendation:</h3>
+      <p id="foodRecommendation"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
